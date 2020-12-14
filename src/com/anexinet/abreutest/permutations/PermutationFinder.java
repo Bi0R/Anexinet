@@ -1,6 +1,6 @@
-package com.anexinet.abreutest.question6;
+package com.anexinet.abreutest.permutations;
 
-public class AnswerSix {
+public class PermutationFinder {
     /**
      * Functions that returns a String with all the permutations of a function
      * @param toPermute

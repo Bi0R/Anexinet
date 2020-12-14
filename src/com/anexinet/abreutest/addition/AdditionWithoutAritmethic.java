@@ -1,8 +1,8 @@
-package com.anexinet.abreutest.question1;
+package com.anexinet.abreutest.addition;
 
 import static com.anexinet.abreutest.utils.Contants.*;
 
-public class AnswerOne {
+public class AdditionWithoutAritmethic {
     private static char remainder = ZERO;
 
     /**

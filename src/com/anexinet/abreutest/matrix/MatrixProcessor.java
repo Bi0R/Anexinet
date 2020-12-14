@@ -1,11 +1,11 @@
-package com.anexinet.abreutest.question4;
+package com.anexinet.abreutest.matrix;
 
 import com.anexinet.abreutest.utils.MatrixPrinter;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class AnswerFour {
+public class MatrixProcessor {
     private static Set<Integer> rowsToChange = new HashSet<Integer>();
     private static Set<Integer> columnsToChange = new HashSet<Integer>();
     /**

@@ -1,11 +1,11 @@
 package com.anexinet.abreutest;
 
-import com.anexinet.abreutest.question1.AnswerOne;
-import com.anexinet.abreutest.question2.AnswerTwo;
-import com.anexinet.abreutest.question3.AnswerThree;
-import com.anexinet.abreutest.question4.AnswerFour;
-import com.anexinet.abreutest.question5.AnswerFive;
-import com.anexinet.abreutest.question6.AnswerSix;
+import com.anexinet.abreutest.addition.AdditionWithoutAritmethic;
+import com.anexinet.abreutest.coincidences.CoincidenceFinder;
+import com.anexinet.abreutest.baseconversion.NumberConverter;
+import com.anexinet.abreutest.matrix.MatrixProcessor;
+import com.anexinet.abreutest.romans.RomanNumeralConverter;
+import com.anexinet.abreutest.permutations.PermutationFinder;
 import com.anexinet.abreutest.utils.MatrixPrinter;
 
 import java.util.Arrays;
@@ -17,20 +17,20 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Question 1: add two numbers without aritmethic operator");
-        System.out.println("5+11="+AnswerOne.addTwoNumbers(5,11));
+        System.out.println("5+11="+ AdditionWithoutAritmethic.addTwoNumbers(5,11));
         System.out.println("Question 2: Get coincidences between 2 strings");
         System.out.println("asdfghjwertyuicvbn  and digezponc, coincidences: ");
-        Character []coincidences = AnswerTwo.getCoincidencesInTwoString("asdfghjwertyuicvbn","digezponc");
+        Character []coincidences = CoincidenceFinder.getCoincidencesInTwoString("asdfghjwertyuicvbn","digezponc");
         Arrays.stream(coincidences).forEach(element->System.out.print(element));
         System.out.println("Question 3: convert number in a given base to int");
-        System.out.println("FFF is equivalent to "+ AnswerThree.converToDecimal("FFF",16));
+        System.out.println("FFF is equivalent to "+ NumberConverter.converToDecimal("FFF",16));
         System.out.println("Question 4: convert zero rows and columns where there is already a zero");
         MatrixPrinter.printMatrix(testMatrix);
         System.out.println("Result: ");
-        AnswerFour.convertRowsAndColumnsToZero(testMatrix);
+        MatrixProcessor.convertRowsAndColumnsToZero(testMatrix);
         System.out.println("Question 5: convert int between 1 and 3999 to roman numeral ");
-        System.out.println("3512 to Roman= "+ AnswerFive.getRomanNumeral(3512));
+        System.out.println("3512 to Roman= "+ RomanNumeralConverter.getRomanNumeral(3512));
         System.out.println("Question 6: get all String permutations ");
-        AnswerSix.printPermutations("java");
+        PermutationFinder.printPermutations("java");
     }
 }

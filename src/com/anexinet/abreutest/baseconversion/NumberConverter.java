@@ -1,4 +1,4 @@
-package com.anexinet.abreutest.question3;
+package com.anexinet.abreutest.baseconversion;
 
 import java.util.Locale;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class AnswerThree {
+public class NumberConverter {
 
     //This map contains regular expressions to validate characters for the diven base
     private static Map<Integer, String> baseValidationRegex = Stream.of(new Object[][]{

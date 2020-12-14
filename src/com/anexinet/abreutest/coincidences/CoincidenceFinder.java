@@ -1,11 +1,9 @@
-package com.anexinet.abreutest.question2;
+package com.anexinet.abreutest.coincidences;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
-public class AnswerTwo {
+public class CoincidenceFinder {
     /**
      * Returns an array of matches between two string with O(n) = n, with n being the size of the shortest string
      * @param firstString

@@ -1,6 +1,6 @@
-package com.anexinet.abreutest.question5;
+package com.anexinet.abreutest.romans;
 
-public class AnswerFive {
+public class RomanNumeralConverter {
     //Numbers used in roman numerals the order is important
     private static String[][] romanNumbers={{"I", "V"},
                                             {"X","L"},
