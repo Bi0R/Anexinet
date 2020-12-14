@@ -23,7 +23,7 @@ public class AnswerThree {
      * @param base
      * @return int number converted, -1 if the conversion was not possible
      */
-    public int converToDecimal(String number, int base) {
+    public static int converToDecimal(String number, int base) {
         number = number.toUpperCase(Locale.ROOT);
         int result = -1;
         if(baseValidationRegex.containsKey(base)){

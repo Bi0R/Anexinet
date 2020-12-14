@@ -12,7 +12,7 @@ public class AnswerTwo {
      * @param secondString
      * @return
      */
-    public Character[] getCoincidencesInTwoString(String firstString, String secondString){
+    public static Character[] getCoincidencesInTwoString(String firstString, String secondString){
         List<Character> coincidences = new ArrayList<>();
         //First we find the shortestString to reduce iterations
         String shortestString;

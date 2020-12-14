@@ -3,7 +3,7 @@ package com.anexinet.abreutest.question1;
 import static com.anexinet.abreutest.utils.Contants.*;
 
 public class AnswerOne {
-    private char remainder = ZERO;
+    private static char remainder = ZERO;
 
     /**
      * Adds two numbers without using aritmethic operators, only positive numbers
@@ -11,7 +11,7 @@ public class AnswerOne {
      * @param numberTwo
      * @return result of the addition
      */
-    public int addTwoNumbers(int numberOne, int numberTwo){
+    public static int addTwoNumbers(int numberOne, int numberTwo){
         /*
         There is a common solution using binary operations like <<, &, etc, I decided to make something different
         mainly because it would be different to know if the solution was copied or original.
@@ -54,7 +54,7 @@ public class AnswerOne {
      * @param digitTwo second binary digit
      * @return the result of the addition and updates the remainder variable
      */
-    private char addTwoBinaryDigits(char digitOne, char digitTwo){
+    private static char addTwoBinaryDigits(char digitOne, char digitTwo){
         if(digitOne!=digitTwo){//if the digits are different one of the must be one and the other zero
             remainder = ZERO;
             return ONE;
