@@ -3,6 +3,7 @@ package com.anexinet.abreutest;
 import com.anexinet.abreutest.addition.AdditionWithoutAritmethic;
 import com.anexinet.abreutest.coincidences.CoincidenceFinder;
 import com.anexinet.abreutest.baseconversion.NumberConverter;
+import com.anexinet.abreutest.longestWord.SentenceProcessor;
 import com.anexinet.abreutest.matrix.MatrixProcessor;
 import com.anexinet.abreutest.romans.RomanNumeralConverter;
 import com.anexinet.abreutest.permutations.PermutationFinder;
@@ -32,5 +33,10 @@ public class Main {
         System.out.println("3512 to Roman= "+ RomanNumeralConverter.getRomanNumeral(3512));
         System.out.println("Question 6: get all String permutations ");
         PermutationFinder.printPermutations("java");
+        System.out.println("\n\nQuestion 7: get longest word in a sentence ");
+        String sentence = "Failure is simply the opportunity to begin again, this time more intelligently.";
+        System.out.println("The longest word in '"+sentence+"' is: ");
+        String[] longestWord = SentenceProcessor.getLongestWord(sentence);
+        Arrays.stream(longestWord).sequential().forEach(word->System.out.print(" "+word));
     }
 }
